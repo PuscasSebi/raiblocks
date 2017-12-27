@@ -2233,7 +2233,7 @@ namespace
 class confirmed_visitor : public rai::block_visitor
 {
 public:
-    confirmed_visitor (rai::node & node_a, std::shared_ptr <rai::block> block_a) :
+    confirmed_visitor (rai::node & node_a, std::shared_ptr <rai::block> const & block_a) :
     node (node_a),
 	block (block_a)
     {

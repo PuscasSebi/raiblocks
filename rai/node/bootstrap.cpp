@@ -1343,7 +1343,7 @@ namespace
 class request_response_visitor : public rai::message_visitor
 {
 public:
-    request_response_visitor (std::shared_ptr <rai::bootstrap_server> connection_a) :
+    request_response_visitor (std::shared_ptr <rai::bootstrap_server> const & connection_a) :
     connection (connection_a)
     {
     }
